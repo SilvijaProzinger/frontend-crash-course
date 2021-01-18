@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Kosarica</title>
+</head>
+<body>
+    <div class="main-content">
+        <button class="cart-button" id="cartButton">
+            <!-- cart icon credit to Freepik on Flaticon -->
+            <?xml version="1.0" encoding="UTF-8"?><svg viewBox="0 -31 512 512" width="50px" height="50px" xmlns="http://www.w3.org/2000/svg"><path d="m164.96 300h0.023437c0.019531 0 0.039063-0.003906 0.058594-0.003906h271.96c6.6953 0 12.582-4.4414 14.422-10.879l60-210c1.293-4.5273 0.38672-9.3945-2.4453-13.152-2.8359-3.7578-7.2695-5.9688-11.977-5.9688h-366.63l-10.723-48.254c-1.5273-6.8633-7.6133-11.746-14.645-11.746h-90c-8.2852 0-15 6.7148-15 15s6.7148 15 15 15h77.969c1.8984 8.5508 51.312 230.92 54.156 243.71-15.941 6.9297-27.125 22.824-27.125 41.289 0 24.812 20.188 45 45 45h272c8.2852 0 15-6.7148 15-15s-6.7148-15-15-15h-272c-8.2695 0-15-6.7305-15-15 0-8.2578 6.707-14.977 14.961-14.996zm312.15-210-51.43 180h-248.65l-40-180z"/><path d="m150 405c0 24.812 20.188 45 45 45s45-20.188 45-45-20.188-45-45-45-45 20.188-45 45zm45-15c8.2695 0 15 6.7305 15 15s-6.7305 15-15 15-15-6.7305-15-15 6.7305-15 15-15z"/><path d="m362 405c0 24.812 20.188 45 45 45s45-20.188 45-45-20.188-45-45-45-45 20.188-45 45zm45-15c8.2695 0 15 6.7305 15 15s-6.7305 15-15 15-15-6.7305-15-15 6.7305-15 15-15z"/></svg>
+        </button>
+        <div class="cart" id="cart">
+            <h4 class="cart-title">My Cart (5 items)</h4>
+            <button class="move-button" id="moveUp">▲</button>
+            <div class="cart-products" id="cartProducts">
+                <div class="product-description">
+                    <img class="product-image" src="https://turn5.scene7.com/is/image/Turn5/S100110?obj=car&wid=1200&hei=900&sharpen=1" alt="GT-S series cross drilled"/>
+                    <div class="product">
+                        <span class="name">Set of GT-S Series Cross Drilled</span>
+                        <span class="description">Brand: Brembo</span>
+                        <span class="description">Color: red</span>
+                        <span class="price">1 x $1770.00</span>
+                    </div>
+                </div>
+                <div class="product-description">
+                    <img class="product-image" src="https://cdn.shopify.com/s/files/1/0276/7293/6522/products/brembo-m-caliper-6-piston-2-piece-355-380mm-drilled-gt-r-med.jpg?v=1576202582" alt="Just disk gt-s cross drilled"/>
+                    <div class="product">
+                        <span class="name">Just Disk GT-S Cross Drilled</span>
+                        <span class="description">Brand: Barbour</span>
+                        <span class="description">Size: 405mm</span>
+                        <span class="price">1 x $950.00</span>
+                    </div>
+                </div>
+                <div class="product-description">
+                    <img class="product-image" src="https://www.chicane23.com/pub/media/catalog/product/cache/5a1dca05d95901b380d158182dc31a86/b/r/brembo-xb1e7-swing-caliper-355x32x54a-slotted-type-3-med.jpg" alt="GT Slotted 2 piece brake rotors" />
+                    <div class="product">
+                        <span class="name">GT Slotted 2 Piece Brake Rotors</span>
+                        <span class="description">Brand: Brembo</span>
+                        <span class="description">Color: Yellow</span>
+                        <span class="price">1 x $1670.00</span>
+                    </div>
+                </div>
+                <div class="product-description">
+                    <img class="product-image" src="https://img.hmn.com/fit-in/900x506/filters:upscale()/stories/2013/12/Valvoline-Brake-Fluid_d.jpg" alt="Synthetic break fluid" />
+                    <div class="product">
+                        <span class="name">Synthetic Break Fluid</span>
+                        <span class="description">Brand: Valvoline</span>
+                        <span class="description">Size: 354ml</span>
+                        <span class="price">1 x $10.00</span>
+                    </div>
+                </div>
+                <div class="product-description">
+                     <img class="product-image" src="https://images.carid.com/plasticolor/products/000798r01.jpg" alt="Black tire cover" />
+                    <div class="product">
+                        <span class="name">Plasticolor Black Tire Cover</span>
+                        <span class="description">Brand: Plasticolor</span>
+                        <span class="description">Size:  27" - 30"</span>
+                        <span class="price">1 x $25.81</span>
+                    </div>
+                </div>
+            </div>
+            <button class="move-button" id="moveDown">▼</button>
+            <div class="cart-buttons">
+                <button class="edit-button">Edit Cart</button>
+                <button class="checkout-button">CHECKOUT</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
