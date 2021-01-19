@@ -1,5 +1,4 @@
 .cart-button {
-    //float: right;
     margin: 20px 0 20px 55vw;
     border: none;
 }
@@ -16,7 +15,6 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     padding: 20px;
     width: 400px;
-    //height: 500px;
     display: none;
     margin: 0 auto;
     clear: both;

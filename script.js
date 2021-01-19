@@ -10,18 +10,24 @@ const toggleCart = () => {
     }
 }
 
-const moveProductsList = () => {
+const moveProductsUp = () => {
     let cart = document.getElementById('cartProducts')
     let firstProduct = cart.firstElementChild
+
+    //append the originally first product to the end of the list so that the list can move up 
+    cart.appendChild(firstProduct)
+}
+
+const moveProductsDown = () => {
+    let cart = document.getElementById('cartProducts')
     let lastProduct = cart.lastElementChild
 
-    //switch places of first and second product so that the second product moves up in the list, then append the originally first product to the end of the list
-    cart.insertBefore(firstProduct.nextElementSibling, firstProduct)
-    cart.appendChild(firstProduct)
+    //append the originally last product to the start of the list so that the list can move down 
+    cart.prepend(lastProduct)
 }
 
 document.getElementById('cartButton').addEventListener('click', toggleCart)
 
-document.getElementById('moveUp').addEventListener('click', moveProductsList)
-document.getElementById('moveDown').addEventListener('click', moveProductsList)
+document.getElementById('moveUp').addEventListener('click', moveProductsUp)
+document.getElementById('moveDown').addEventListener('click', moveProductsDown)
 
